@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Livewire;
-namespace App\Http\Livewire;
 
 use App\Models\Category;
 use App\Models\Education;
@@ -9,6 +8,9 @@ use App\Models\Teacher;
 use Livewire\Component;
 use Carbon\Carbon;
 use Livewire\WithPagination;
+use phpDocumentor\Reflection\Location;
+use Illuminate\Http\Request;
+
 
 class Educations extends Component
 {
@@ -118,6 +120,10 @@ class Educations extends Component
     {
         Education::find($id)->delete();
         session()->flash('message', 'Opleiding deleted.');
+    }
+
+    public function view_educations($id) {
+        return redirect()->route('view_educations.index', ['id' => $id]);
     }
 }
 

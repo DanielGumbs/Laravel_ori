@@ -18,7 +18,7 @@ class Teachers extends Component
 
     public function render()
     {
-        $teachers = Teacher::paginate(3);
+        $teachers = Teacher::paginate(5);
         return view('livewire.teachers.teachers', [
             'teachers' => $teachers,
         ]);

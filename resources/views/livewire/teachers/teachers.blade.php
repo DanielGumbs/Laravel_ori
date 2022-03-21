@@ -9,7 +9,7 @@
                 Maak docent aan
             </button>
         </div>
-        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
+        <div class="mt-3">
             @if (session()->has('message'))
                 <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3"
                      role="alert">
@@ -64,7 +64,7 @@
             </div>
         </div>
         <br>
-        {{ $teachers->links() }}
+        <div class="p-6 mt-2 bg-white rounded shadow mt-8">{{ $teachers->links() }} </div>
     </div>
 </div>
 </div>

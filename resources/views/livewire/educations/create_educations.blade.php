@@ -22,8 +22,8 @@
                                    class="block text-gray-700 text-sm font-bold mb-2">Beschrijving</label>
                             <input type="text"
                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                   id="description" wire:model="description">
-                            @error('description') <span class="text-red-500">{{ $message }}</span>@enderror
+                                    id="description" wire:model="description">
+                                    @error('description') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="mb-4">
                             <label for="category-veld"
@@ -61,21 +61,20 @@
                             @error('endtime') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <div class="mb-4">
-                            <label for="amount"
-                                   class="block text-gray-700 text-sm font-bold mb-2">Aantal Plekken</label>
-                            <input type="number"
-                                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                id="amount" wire:model="amount">
-                            <br>
-                            @error('amount') <span class="text-red-500">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="mb-4">
                             <label for="people"
                                    class="block text-gray-700 text-sm font-bold mb-2">Bezetten plekken</label>
                             <input type="number"
                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                    id="people" wire:model="people">
                             @error('people') <span class="text-red-500">{{ $message }}</span>@enderror
+                        </div>
+                        <div class="mb-4">
+                            <label for="amount"
+                                   class="block text-gray-700 text-sm font-bold mb-2">Aantal plekken</label>
+                            <input type="number"
+                                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="amount" wire:model="amount">
+                            @error('amount') <span class="text-red-500">{{ $message }}</span>@enderror
                         </div>
                         <br>
                     <div class="flex space-x-4">

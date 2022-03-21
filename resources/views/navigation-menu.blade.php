@@ -29,26 +29,26 @@
                         {{ __('Charts-js') }}
                     </x-jet-nav-link>
                 </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('charts.index') }}" :active="request()->routeIs('charts.index')">
-                        {{ __('Larapex') }}
-                    </x-jet-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('LivewirePieChart.index') }}" :active="request()->routeIs('LivewirePieChart.index')">
-                        {{ __('Livewire Chart') }}
-                    </x-jet-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('pie_chart.index') }}" :active="request()->routeIs('pie_chart.index')">
-                        {{ __('HighCharts') }}
-                    </x-jet-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('C3chart.index') }}" :active="request()->routeIs('C3chart.index')">
-                        {{ __('C3Chart') }}
-                    </x-jet-nav-link>
-                </div>
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('charts.index') }}" :active="request()->routeIs('charts.index')">--}}
+{{--                        {{ __('Larapex') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('LivewirePieChart.index') }}" :active="request()->routeIs('LivewirePieChart.index')">--}}
+{{--                        {{ __('Livewire Chart') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('pie_chart.index') }}" :active="request()->routeIs('pie_chart.index')">--}}
+{{--                        {{ __('HighCharts') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                </div>--}}
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('C3chart.index') }}" :active="request()->routeIs('C3chart.index')">--}}
+{{--                        {{ __('C3Chart') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                </div>--}}
             </div>
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
